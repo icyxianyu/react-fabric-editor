@@ -15,9 +15,7 @@ const StyleHeader = styled(Header)`
 const ShadowContent = styled(Content)`
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 9px 2px #0000001f;
-  z-index: 2;
-  pointer-events: none;
+  box-shadow: inset 0 0 9px 2px #0000001f;  
 `
 export default  function LayoutContainer() {
   
@@ -27,17 +25,12 @@ export default  function LayoutContainer() {
             <StyleHeader></StyleHeader>
             <Layout >
               <Sider 
-                  theme={theme}
-                  collapsible></Sider>
-
+                  theme={theme}></Sider>
               <ShadowContent>
                 <Fabric/>
               </ShadowContent>
-
               <Sider 
-                  theme={theme}
-                  collapsible
-                  reverseArrow></Sider>
+                  theme={theme}></Sider>
             </Layout>
       </Container>
   )
